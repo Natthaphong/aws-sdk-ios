@@ -206,6 +206,7 @@
 		211167202399C5BF00902FC1 /* AWSKinesisVideoSignalingModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 211167182399C5BC00902FC1 /* AWSKinesisVideoSignalingModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		211167222399C5BF00902FC1 /* AWSKinesisVideoSignalingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2111671A2399C5BC00902FC1 /* AWSKinesisVideoSignalingModel.m */; };
 		211167232399C5BF00902FC1 /* AWSKinesisVideoSignalingResources.m in Sources */ = {isa = PBXBuildFile; fileRef = 2111671B2399C5BE00902FC1 /* AWSKinesisVideoSignalingResources.m */; };
+		5D9A364624CAA0F600A37F30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D9A364524CAA0F600A37F30 /* Main.storyboard */; };
 		95CEF9F623BFFCB4006D4663 /* AWSSRWebSocket+TranscribeStreaming.h in Headers */ = {isa = PBXBuildFile; fileRef = 95CEF9F223BEC583006D4663 /* AWSSRWebSocket+TranscribeStreaming.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		95DED99023B1ACD500F7D354 /* AWSTranscribeStreamingWebSocketProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 95DED98F23B1ACD500F7D354 /* AWSTranscribeStreamingWebSocketProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		95DED99223B1B7A900F7D354 /* AWSSRWebSocketAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DED99123B1B7A900F7D354 /* AWSSRWebSocketAdaptor.m */; };
@@ -1315,6 +1316,7 @@
 		211167372399CE8400902FC1 /* AWSKinesisVideoSignalingTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AWSKinesisVideoSignalingTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		211167382399D25000902FC1 /* AWSGeneralKinesisVideoSignalingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWSGeneralKinesisVideoSignalingTests.m; sourceTree = "<group>"; };
 		2111673B2399D82100902FC1 /* AWSKinesisVideoSignalingIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSKinesisVideoSignalingIntegrationTests.swift; sourceTree = "<group>"; };
+		5D9A364524CAA0F600A37F30 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		95CEF9F223BEC583006D4663 /* AWSSRWebSocket+TranscribeStreaming.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AWSSRWebSocket+TranscribeStreaming.h"; sourceTree = "<group>"; };
 		95CEF9F323BFF67D006D4663 /* AWSTranscribeStreamingClientWebSocketProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSTranscribeStreamingClientWebSocketProviderTests.swift; sourceTree = "<group>"; };
 		95DED98F23B1ACD500F7D354 /* AWSTranscribeStreamingWebSocketProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWSTranscribeStreamingWebSocketProvider.h; sourceTree = "<group>"; };
@@ -2746,6 +2748,7 @@
 				181154841E201403008F184C /* Assets.xcassets */,
 				181154891E201404008F184C /* Info.plist */,
 				181154781E201403008F184C /* Supporting Files */,
+				5D9A364524CAA0F600A37F30 /* Main.storyboard */,
 			);
 			path = AWSAllTestsHost;
 			sourceTree = "<group>";
@@ -6866,6 +6869,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				181154851E201403008F184C /* Assets.xcassets in Resources */,
+				5D9A364624CAA0F600A37F30 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
