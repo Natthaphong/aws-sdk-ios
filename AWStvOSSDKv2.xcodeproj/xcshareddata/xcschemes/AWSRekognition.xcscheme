@@ -85,6 +85,16 @@
                ReferencedContainer = "container:AWStvOSSDKv2.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5D8C6B3924D17B08000258D8"
+               BuildableName = "AWSMobileClientTests.xctest"
+               BlueprintName = "AWSMobileClientTests"
+               ReferencedContainer = "container:AWStvOSSDKv2.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
