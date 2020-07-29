@@ -58,6 +58,8 @@
 		5D8C6B4424D17B08000258D8 /* AWSMobileClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D8C6B3424D17B08000258D8 /* AWSMobileClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D8C6B4724D17B08000258D8 /* AWSMobileClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D8C6B3224D17B08000258D8 /* AWSMobileClient.framework */; };
 		5D8C6B4824D17B08000258D8 /* AWSMobileClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D8C6B3224D17B08000258D8 /* AWSMobileClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D8C6B5724D17F19000258D8 /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0D416D1C6A66E5006B91B5 /* AWSCore.framework */; };
+		5D8C6B5824D17F19000258D8 /* AWSCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE0D416D1C6A66E5006B91B5 /* AWSCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5D9A364624CAA0F600A37F30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D9A364524CAA0F600A37F30 /* Main.storyboard */; };
 		9A2562EC20E2E0D100D2451E /* AWSS3TransferUtility+HeaderHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2562EA20E2E0D100D2451E /* AWSS3TransferUtility+HeaderHelper.h */; };
 		9A2562ED20E2E0D100D2451E /* AWSS3TransferUtility+HeaderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2562EB20E2E0D100D2451E /* AWSS3TransferUtility+HeaderHelper.m */; };
@@ -385,6 +387,13 @@
 			remoteGlobalIDString = 5D8C6B3124D17B08000258D8;
 			remoteInfo = AWSMobileClient;
 		};
+		5D8C6B5924D17F19000258D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE0D41541C6A66A9006B91B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE0D416C1C6A66E5006B91B5;
+			remoteInfo = AWSCore;
+		};
 		CE9DE7361C6A7AC90060793F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CE0D41541C6A66A9006B91B5 /* Project object */;
@@ -423,6 +432,17 @@
 			dstSubfolderSpec = 10;
 			files = (
 				5D8C6B4824D17B08000258D8 /* AWSMobileClient.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D8C6B5B24D17F1A000258D8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5D8C6B5824D17F19000258D8 /* AWSCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,8 +492,9 @@
 		5D8C6B3224D17B08000258D8 /* AWSMobileClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AWSMobileClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D8C6B3424D17B08000258D8 /* AWSMobileClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWSMobileClient.h; sourceTree = "<group>"; };
 		5D8C6B3524D17B08000258D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5D8C6B4124D17B08000258D8 /* AWSMobileClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSMobileClientTests.swift; sourceTree = "<group>"; };
-		5D8C6B4324D17B08000258D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D8C6B5024D17F07000258D8 /* AWSAuthSDK */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AWSAuthSDK; path = AWSMobileClient/AWSAuthSDK; sourceTree = "<group>"; };
+		5D8C6B5124D17F07000258D8 /* AWSCognito */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AWSCognito; path = AWSMobileClient/AWSCognito; sourceTree = "<group>"; };
+		5D8C6B5224D17F07000258D8 /* AWSCognitoAuth */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AWSCognitoAuth; path = AWSMobileClient/AWSCognitoAuth; sourceTree = "<group>"; };
 		5D9A364524CAA0F600A37F30 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9A2562EA20E2E0D100D2451E /* AWSS3TransferUtility+HeaderHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AWSS3TransferUtility+HeaderHelper.h"; sourceTree = "<group>"; };
 		9A2562EB20E2E0D100D2451E /* AWSS3TransferUtility+HeaderHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AWSS3TransferUtility+HeaderHelper.m"; sourceTree = "<group>"; };
@@ -991,6 +1012,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D8C6B5724D17F19000258D8 /* AWSCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1049,6 +1071,9 @@
 		17E6B467209BB99A0079B286 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5D8C6B5024D17F07000258D8 /* AWSAuthSDK */,
+				5D8C6B5124D17F07000258D8 /* AWSCognito */,
+				5D8C6B5224D17F07000258D8 /* AWSCognitoAuth */,
 				B5A0263622F025E0001C75CE /* libOCMock.a */,
 				B5DD455D22CA6AC9003871AE /* libOCMock.a */,
 			);
@@ -1126,15 +1151,6 @@
 			path = AWSMobileClient;
 			sourceTree = "<group>";
 		};
-		5D8C6B4024D17B08000258D8 /* AWSMobileClientTests */ = {
-			isa = PBXGroup;
-			children = (
-				5D8C6B4124D17B08000258D8 /* AWSMobileClientTests.swift */,
-				5D8C6B4324D17B08000258D8 /* Info.plist */,
-			);
-			path = AWSMobileClientTests;
-			sourceTree = "<group>";
-		};
 		CE0D41531C6A66A9006B91B5 = {
 			isa = PBXGroup;
 			children = (
@@ -1159,7 +1175,6 @@
 				CE9DE9CA1C6A7C2E0060793F /* AWSS3Tests */,
 				CE5604A01C6BC97600B4E00B /* AWSS3UnitTests */,
 				5D8C6B3324D17B08000258D8 /* AWSMobileClient */,
-				5D8C6B4024D17B08000258D8 /* AWSMobileClientTests */,
 				17E6B467209BB99A0079B286 /* Frameworks */,
 				CE0D415E1C6A66AA006B91B5 /* Products */,
 			);
@@ -2359,10 +2374,12 @@
 				5D8C6B2E24D17B08000258D8 /* Sources */,
 				5D8C6B2F24D17B08000258D8 /* Frameworks */,
 				5D8C6B3024D17B08000258D8 /* Resources */,
+				5D8C6B5B24D17F1A000258D8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5D8C6B5A24D17F19000258D8 /* PBXTargetDependency */,
 			);
 			name = AWSMobileClient;
 			productName = AWSMobileClient;
@@ -2868,6 +2885,11 @@
 			target = 5D8C6B3124D17B08000258D8 /* AWSMobileClient */;
 			targetProxy = 5D8C6B4524D17B08000258D8 /* PBXContainerItemProxy */;
 		};
+		5D8C6B5A24D17F19000258D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE0D416C1C6A66E5006B91B5 /* AWSCore */;
+			targetProxy = 5D8C6B5924D17F19000258D8 /* PBXContainerItemProxy */;
+		};
 		CE9DE7371C6A7AC90060793F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CE0D416C1C6A66E5006B91B5 /* AWSCore */;
@@ -2955,9 +2977,10 @@
 				INFOPLIST_FILE = AWSMobileClient/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 2.15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.amazonaws.sdk.tvos.AWSMobileClient.AWSMobileClient;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amazonaws.sdk.tvos.AWSMobileClient;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -2988,8 +3011,9 @@
 				INFOPLIST_FILE = AWSMobileClient/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 2.15.0;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.amazonaws.sdk.tvos.AWSMobileClient.AWSMobileClient;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amazonaws.sdk.tvos.AWSMobileClient;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
