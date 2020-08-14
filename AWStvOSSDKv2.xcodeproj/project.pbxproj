@@ -56,8 +56,6 @@
 		18DF08DB1D34866E004C7D19 /* AWSCognitoIdentity+Fabric.h in Headers */ = {isa = PBXBuildFile; fileRef = 18DF08DA1D34866E004C7D19 /* AWSCognitoIdentity+Fabric.h */; };
 		18DF08E61D349137004C7D19 /* AWSS3RequestRetryHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DF08E51D349137004C7D19 /* AWSS3RequestRetryHandler.m */; };
 		5D8C6B4424D17B08000258D8 /* AWSMobileClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D8C6B3424D17B08000258D8 /* AWSMobileClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5D8C6B4724D17B08000258D8 /* AWSMobileClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D8C6B3224D17B08000258D8 /* AWSMobileClient.framework */; };
-		5D8C6B4824D17B08000258D8 /* AWSMobileClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D8C6B3224D17B08000258D8 /* AWSMobileClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5D8C6B5724D17F19000258D8 /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0D416D1C6A66E5006B91B5 /* AWSCore.framework */; };
 		5D8C6B5824D17F19000258D8 /* AWSCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE0D416D1C6A66E5006B91B5 /* AWSCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5D9A364624CAA0F600A37F30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D9A364524CAA0F600A37F30 /* Main.storyboard */; };
@@ -377,13 +375,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5D8C6B4524D17B08000258D8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CE0D41541C6A66A9006B91B5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5D8C6B3124D17B08000258D8;
-			remoteInfo = AWSMobileClient;
-		};
 		5D8C6B5924D17F19000258D8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CE0D41541C6A66A9006B91B5 /* Project object */;
@@ -422,17 +413,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		181270DD1E8EB53A00174785 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				5D8C6B4824D17B08000258D8 /* AWSMobileClient.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5D8C6B5B24D17F1A000258D8 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1000,7 +980,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D8C6B4724D17B08000258D8 /* AWSMobileClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2333,12 +2312,10 @@
 				181154721E201403008F184C /* Sources */,
 				181154731E201403008F184C /* Frameworks */,
 				181154741E201403008F184C /* Resources */,
-				181270DD1E8EB53A00174785 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5D8C6B4624D17B08000258D8 /* PBXTargetDependency */,
 			);
 			name = AWSAllTestsHost;
 			productName = AWSAllTestsHost;
@@ -2801,11 +2778,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5D8C6B4624D17B08000258D8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5D8C6B3124D17B08000258D8 /* AWSMobileClient */;
-			targetProxy = 5D8C6B4524D17B08000258D8 /* PBXContainerItemProxy */;
-		};
 		5D8C6B5A24D17F19000258D8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CE0D416C1C6A66E5006B91B5 /* AWSCore */;
@@ -2908,7 +2880,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 13.4;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
@@ -2939,7 +2911,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 13.4;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
